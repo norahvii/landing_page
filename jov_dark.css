@@ -4,12 +4,95 @@ body{
 
 h1{
   color:#FFFFFF;
+  font-family: 'Bellefair', serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 p{
   color:#FFFFFF;
+  font-family: 'Bellefair', serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 h5{
   color:#FFFFFF;
+  font-family: 'Bellefair', serif;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.welcome {
+  width: 360px;
+  height: 50px;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075)
+  ;
+}
+
+.follow:link, .follow:visited,  .follow:hover, .follow:active {
+  text-decoration: none;
+  color: #FFFFFF
+}
+
+.follow {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #transparent;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.follow:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.follow:active {
+    color: #18191d
+}
+
+.follow:active:after {
+    background: transparent;
+}
+
+.follow:hover:before {
+    opacity: 1;
+}
+
+.follow:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #18191d;
+    left: 0;
+    top: 0;
+    border-radius: 14px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
