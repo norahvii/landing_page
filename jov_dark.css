@@ -1,5 +1,5 @@
 body{
-  background-color:#FFFFFF;
+  background-color:#18191d;
   text-align: center;
   border: 0px;
   border-top: 0px;
@@ -7,19 +7,19 @@ body{
 }
 
 h1{
-  color:#000000;
+  color:#FFFFFF;
   font-family: 'Bellefair', serif;
   font-family: 'Titillium Web', sans-serif;
 }
 
 p{
-  color:#000000;
+  color:#FFFFFF;
   font-family: 'Bellefair', serif;
   font-family: 'Titillium Web', sans-serif;
 }
 
 h5{
-  color:#000000;
+  color:#FFFFFF;
   font-family: 'Bellefair', serif;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -41,7 +41,7 @@ h5{
 
 .follow:link, .follow:visited,  .follow:hover, .follow:active {
   text-decoration: none;
-  color:#000000
+  color: #FFFFFF
 }
 
 .follow {
@@ -77,7 +77,7 @@ h5{
 }
 
 .follow:active {
-    color: #FFFFFF
+    color: #18191d
 }
 
 .follow:active:after {
@@ -94,7 +94,7 @@ h5{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #FFFFFF;
+    background: #18191d;
     left: 0;
     top: 0;
     border-radius: 14px;
