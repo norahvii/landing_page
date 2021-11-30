@@ -24,6 +24,21 @@ h5{
   font-family: 'Titillium Web', sans-serif;
 }
 
+.follow-bar {
+  text-align: center;
+  border: 0px;
+  border-top: 0px;
+  margin:0px;
+  height: 35px;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075)
+  ;
+}
+
 .welcome {
   text-align: center;
   border: 0px;
@@ -104,4 +119,20 @@ h5{
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+.portrait {
+  text-align: center;
+  border: 40px;
+  border-top: 10px;
+  margin:20px;
+  height: 400px;
+  width:auto;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075)
+  ;
 }
