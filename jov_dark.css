@@ -1,5 +1,9 @@
 body{
   background-color:#18191d;
+  text-align: center;
+  border: 0px;
+  border-top: 0px;
+  margin:0px
 }
 
 h1{
@@ -21,7 +25,10 @@ h5{
 }
 
 .welcome {
-  width: 360px;
+  text-align: center;
+  border: 0px;
+  border-top: 0px;
+  margin:0px;
   height: 50px;
   box-shadow:
     0 1px 1px hsl(0deg 0% 0% / 0.075),
