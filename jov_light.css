@@ -24,7 +24,7 @@ h5{
   font-family: 'Titillium Web', sans-serif;
 }
 
-.follow-bar {
+.link-bar {
   text-align: center;
   border: 0px;
   border-top: 0px;
@@ -54,12 +54,12 @@ h5{
   ;
 }
 
-.follow:link, .follow:visited,  .follow:hover, .follow:active {
+.rainbow:link, .rainbow:visited,  .rainbow:hover, .rainbow:active {
   text-decoration: none;
   color:#000000
 }
 
-.follow {
+.rainbow {
     width: 220px;
     height: 50px;
     border: none;
@@ -74,7 +74,7 @@ h5{
     font-family: 'Titillium Web', sans-serif;
 }
 
-.follow:before {
+.rainbow:before {
     content: '';
     background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
     position: absolute;
@@ -91,19 +91,19 @@ h5{
     border-radius: 10px;
 }
 
-.follow:active {
+.rainbow:active {
     color: #FFFFFF
 }
 
-.follow:active:after {
+.rainbow:active:after {
     background: transparent;
 }
 
-.follow:hover:before {
+.rainbow:hover:before {
     opacity: 1;
 }
 
-.follow:after {
+.rainbow:after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -128,6 +128,22 @@ h5{
   margin:20px;
   height: 400px;
   width:auto;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075)
+  ;
+}
+
+.my-writing {
+  font-size: 24px;
+  text-align: center;
+  border: 0px;
+  border-top: 0px;
+  margin:0px;
+  height: 50px;
   box-shadow:
     0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075),
