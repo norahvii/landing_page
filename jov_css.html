@@ -5,22 +5,12 @@
     <title>Norah is awesome.</title>
     <link id="theme" rel="stylesheet"
         type="text/css" href="jov_dark.css" />
-    <script>
-    function toggleTheme() {
-        var theme = document.getElementsByTagName('link')[0];
-        if (theme.getAttribute('href') == 'jov_light.css') {
-            theme.setAttribute('href', 'jov_dark.css');
-        } else {
-            theme.setAttribute('href', 'jov_light.css');
-        }
-    }
-  </script>
-  <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bellefair&family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
   </head>
   <body>
       <h1 class="welcome">Welcome to Norah's page.</h1>
         <p>I'm a writer, philosopher, programmer, and artist.
-          <h5><span><button onclick="toggleTheme()">Change Theme</button></span>  Follow me on any of these websites:</h5>
+          <h5>Follow me on any of these websites:</h5>
             <thead>
               <div class="follow-bar">
                 <th>&nbsp<a class="follow" href="https://github.com/jopvivi?tab=repositories">GitHub</a>&nbsp</th>
@@ -31,6 +21,16 @@
               </div>
             </thead>
         </p>
-      <img class="portrait" src="https://www.ignant.com/wp-content/uploads/2015/01/Rocio-Montoya_Collage_01-360x509.jpg">
+      <img onclick="toggleTheme()" class="portrait" src="https://www.ignant.com/wp-content/uploads/2015/01/Rocio-Montoya_Collage_01-360x509.jpg">
   </body>
+  <script>
+  function toggleTheme() {
+      var theme = document.getElementsByTagName('link')[0];
+      if (theme.getAttribute('href') == 'jov_light.css') {
+          theme.setAttribute('href', 'jov_dark.css');
+      } else {
+          theme.setAttribute('href', 'jov_light.css');
+      }
+  }
+  </script>
 </html>
